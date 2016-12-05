@@ -1,0 +1,5 @@
+/*Hide all except first fieldset*/
+ fieldset:not(:first-of-type),.outcome {
+	display: none;
+}
+

@@ -14,19 +14,53 @@
     <header>
       <h1>Elevate My Mood</h1>
     </header>
-
-
-    <main>
-      <h3>Question 1</h3>
-
-        <form action="action_page.php">
-          <fieldset>
-            <legend>What is the weather today?</legend>
-            <input type="radio" name="weather" value="sunny" checked>Sunny<br>
-            <input type="radio" name="weather" value="rainy"> Rainy<br>
-            <input type="radio" name="weather" value="cold"> Cold<br />
-            <input type="submit" value="Submit">
+    <main>      
+        <form id="questform">
+          <fieldset id="question1">
+            <legend>How do you feel today?</legend>
+            <label for="q1a1"><input id="q1a1" type="radio" data-action="question2" name="mood" value="" checked> Aggressive</label><br>
+            <input type="radio" data-action="question3" name="mood" value="rainy"> Stressed<br>
+            <input type="radio" data-action="question4" name="mood" value="cold"> Low<br />
+            <input type="submit" id="mood" value="Submit" >
           </fieldset>
+          <fieldset id="question2">
+            <legend>How do you feel about seeing other people?</legend>
+            <input type="radio" data-action="outcome1" name="feeling1" value="introverted" checked>Introverted<br>
+            <input type="radio" data-action="outcome2" name="feeling1" value="extroverted"> Extroverted<br>          
+            <input type="submit" id="feeling1" value="Submit">
+          </fieldset>
+          <fieldset id="question3">
+              <legend>How do you feel about seeing other people?</legend>
+            <input type="radio" data-action="outcome3" name="feeling2" value="introverted" checked>Introverted<br>
+            <input type="radio"  data-action="outcome4" name="feeling2" value="extroverted"> Extroverted<br>          
+            <input type="submit" id="feeling2" value="Submit">
+          </fieldset>
+          <fieldset id="question4">
+              <legend>How do you feel about seeing other people?</legend>
+            <input type="radio" data-action="outcome5" name="feeling3" value="introverted" checked>Introverted<br>
+            <input type="radio" data-action="outcome6" name="feeling3" value="extroverted"> Extroverted<br>          
+            <input type="submit" id="feeling3" value="Submit">
+          </fieldset>          
+          <div class="outcome" id="outcome1">
+          <p>I'm guessing you are feeling introverted yet also strangely aggressive</p>
+          </div>
+          <div class="outcome" id="outcome2">
+          <p>I'm guessing you are feeling extroverted yet also strangely aggressive</p>
+          </div>
+          <div class="outcome" id="outcome3">
+          <p>Are you stressed, introverted?</p>
+          </div>    
+          <div class="outcome" id="outcome4">
+            <p>Are you stressed, extroverted?</p>
+          </div>        
+          <div class="outcome" id="outcome5">
+            <p>Are you low, introverted?</p>
+          </div>    
+          <div class="outcome" id="outcome6">
+            <p>Are you low, extroverted?</p>
+          </div>  
+
+
         </form>
     </main>
 
