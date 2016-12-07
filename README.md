@@ -7,3 +7,12 @@ Initially we hardcoded the questions
 Subsequently we put these into JSON, ready to be populated via database in future
 
 To edit questions and outcomes, edit the JSON in js/main.js
+This is structured as follows:
+questions
+ question
+ questionID
+ responses
+  response
+  action
+outcomes
+ 
